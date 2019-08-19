@@ -1,0 +1,21 @@
+.Sidebar {
+    position: absolute;
+    top: 4rem;
+    left: -50%;
+    transition: left .3s ease-in-out;
+    color:white;
+    background: rgba(0,0,0,0.5);
+    padding: 1rem;
+    border-radius:0 15px 15px 0;
+
+    &.active {
+        left: 0;
+    }
+
+    input {
+        height: 1.5rem;
+        border-radius:5px;
+        border:none;
+    }
+}
+
