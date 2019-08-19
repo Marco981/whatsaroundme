@@ -1,0 +1,19 @@
+.MapContainer {
+    background:#242424;
+    height:100vh;
+}
+
+.menu {
+    position:fixed;
+    width:40px;
+    height:30px;
+    padding: .5rem;
+    cursor: pointer;
+
+    &__item {
+        background:white;
+        height:3px;
+        margin-bottom: 6px;
+        display:block;
+    }
+}
