@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Sidebar from '../Sidebar/Sidebar'
+import Map from '../Map/Map'
 
 import './MapContainer.scss'
 
@@ -28,6 +29,7 @@ class MapContainer extends Component {
           <span className='menu__item' />
         </div>
         <Sidebar isOn={this.state.sidebarOn} />
+        <Map />
       </div>
     )
   }
