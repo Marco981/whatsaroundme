@@ -1,25 +1,61 @@
 .Sidebar {
     position: absolute;
     top: 4rem;
-    left: -50%;
+    left: -100%;
     transition: left .3s ease-in-out;
     color:white;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.7);
     padding: 1rem;
     border-radius:0 15px 15px 0;
+    z-index: 2;
+    max-height: 90%;
+    width:70%;
+
+    @media screen and (min-width:700px){
+        max-width:400px;
+    }
 
     &.active {
         left: 0;
     }
 
     h3 {
-        margin:2rem 0;
+        margin:1rem 0;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family:'Quicksand';
     }
 
     input {
         height: 1.5rem;
         border-radius:5px;
         border:none;
+        display: block;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    ul {
+        padding-top: 2rem;   
+    }
+
+    li {
+        list-style: none;
+        padding: 1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor:pointer;
+
+        &:hover {
+            background: rgba(255,255,255,.7);
+            color:black;
+        }
+        &:before,
+        &:after {
+            content:'';
+            width:50%;
+        }
     }
 }
 
