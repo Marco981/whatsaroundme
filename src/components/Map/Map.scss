@@ -1,0 +1,19 @@
+.PoiButton {
+    cursor: pointer;
+    border: none;
+    background: rgba(255,255,255,.7);
+    border-radius: 5px;
+    outline: none;
+
+    img {
+        width: 25px; 
+        height: 25px;
+    }
+}
+
+.Popup {
+    @media screen and (max-width:699px){
+        max-width:320px;
+    }
+}
+
